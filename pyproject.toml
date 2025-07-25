@@ -1,0 +1,13 @@
+[project]
+name = "paviewer"
+version = "0.1.0"
+description = "Price Action Viewer - Trading decision support tool for Chinese stock and futures markets"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "websockets>=12.0",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.5.0",
+]

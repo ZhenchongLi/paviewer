@@ -1,0 +1,17 @@
+{
+  "name": "paviewer-frontend",
+  "version": "0.1.0",
+  "description": "PAViewer Frontend - Trading Chart Interface",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lightweight-charts": "^4.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
