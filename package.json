@@ -1,0 +1,33 @@
+{
+  "name": "paviewer",
+  "version": "0.1.0",
+  "description": "PAViewer - Trading Chart Analysis Tool",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "preview": "npm run preview --workspace=frontend",
+    "install:frontend": "npm install --workspace=frontend",
+    "clean": "rm -rf frontend/node_modules frontend/dist",
+    "backend:dev": "cd backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "trading",
+    "charts",
+    "analysis",
+    "fastapi",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT"
+}
